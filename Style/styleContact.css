@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    background: #a172dc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+
+
+.content {
+    position: relative;
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.content .text h1 {
+    color: white;
+    line-height: 1em;
+    font-size: 6em;
+}
+
+
+.content .text h2 {
+    line-height: 1.5em;
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.content .text h2 span {
+    color: #ffde83;
+    font-weight: bold;
+}
+
+.content .text p {
+    position: relative;
+    color: white;
+    line-height: 1em;
+    font-size: 1.7em;
+    font-weight: lighter;
+
+}
+
+.content .text p span {
+    color: #ffde83;
+
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 900px) {
+
+    .content {
+    text-align: center;
+    }
+
+
+    .content .text h1 {
+        font-size: 3em;
+    }
+
+
+    .content .text h2 {
+        font-size: 1.5em;
+    }
+
+    .content .text p {
+        font-size: 0.7em;
+    }
+}

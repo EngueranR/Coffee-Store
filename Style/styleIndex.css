@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    background: #a172dc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+
+
+.content {
+    position: relative;
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.content .text h1 {
+    color: white;
+    line-height: 1em;
+    font-size: 6em;
+}
+
+.content .text h2 {
+    line-height: 1.5em;
+    color: white;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.content .text h2 span {
+    color: #ffde83;
+    font-weight: bold;
+}
+
+.content .text p {
+    position: relative;
+    color: white;
+    line-height: 1em;
+    font-size: 1.7em;
+    font-weight: lighter;
+
+}
+
+.content .text p span {
+    color: #ffde83;
+
+}
+
+.content .text .btnDecouvrir {
+    position: relative;
+    margin-top: 2em;
+    display: inline-block;
+    padding: 20px 50px;
+    color: #2b1055;
+    background-color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 44px;
+    text-decoration: none;
+    transition: 0.25s;
+
+}
+
+.content .text .btnDecouvrir:hover {
+    letter-spacing: 1.5px;
+    color: #5e2e9c;
+}
+
+.package {
+    transition: 0.25s;
+    position: relative;
+    top : 4vh;
+    width: 25em;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    body {
+        padding: 40px;
+    }
+
+    header {
+        padding: 20px 40px;
+        flex-direction: column;
+    }
+
+    header ul li {
+        list-style: none;
+        margin-left: 0.5em;
+    }
+
+
+    .logo {
+        position: relative;
+        top : -5px;
+        max-width: 440px;
+    }
+
+    .content {
+        position: relative;
+        top : 10px;
+        text-align: center;
+        flex-direction: column;
+        margin: 120px 40px;
+    }
+
+    .content .text h1 {
+        font-size: 5em;
+    }
+
+    .content .text h2 {
+        font-size: 2em;
+    }
+
+
+    .content .text p {
+        font-size: 1.5em;
+    }
+
+}
+
+
+@media (max-height: 900px) {
+    .package {
+        transition: 0.25s;
+        top : 10vh;
+    }
+}
+
+@media (max-height: 500px) {
+    .package {
+        top : 20vh;
+    }
+
+}
+
+@media (max-height: 500px) {
+    .package {
+        top: 30vh;
+    }
+}
+
